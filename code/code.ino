@@ -9,6 +9,8 @@
 // Declaration for SSD1306 display connected using software SPI (default case):
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+
+#define FILTER_THRESHOLD 5000
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 int sensorOut=3;
@@ -45,10 +47,18 @@ void setup() {
 
 void loop() {
   long sens = analogRead(A0);
-  analogWrite(sensorOut, sens);
+  long newSens = 0;
+  for(int i = 1; i <= FILTER_THRESHOLD; i++){
+    newSens = newSens + analogRead(A0);
+  }
+  newSens = newSens/FILTER_THRESHOLD;
+
+  analogWrite(sensorOut, newSens);
   Serial.print("Sensor Reading: ");
+  Serial.print(newSens);
+    Serial.print("     |     Sensor Reading: ");
   Serial.print(sens);
-  sens  = map(sens, 0, 1024, 0, 100);
+  sens  = map(newSens, 0, 1024, 0, 100);
   testdrawchar(sens);
   Serial.print("      |      ");
   Serial.print("Alcohol Percentage: ");
