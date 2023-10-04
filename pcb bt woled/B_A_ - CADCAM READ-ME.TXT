@@ -1,0 +1,48 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'B_A_.pdsprj'.
+CADCAM generated at 16:53:09 on 26 September 2023.
+
+File List
+---------
+Bottom Copper           : B_A_ - CADCAM Bottom Copper.GBR
+Bottom Solder Resist    : B_A_ - CADCAM Bottom Solder Resist.GBR
+Top Assembly            : B_A_ - CADCAM Top Assembly.GBR
+Bottom Assembly         : B_A_ - CADCAM Bottom Assembly.GBR
+Slot                    : B_A_ - CADCAM Slot.GBR
+Drill, Plated, 1-16     : B_A_ - CADCAM Drill TOP-BOT Plated.GBR
+Drill, Filled, 1-16     : B_A_ - CADCAM Drill TOP-BOT Filled and Plated.GBR
+Netlist                 : B_A_ - CADCAM Netlist.IPC
+
+Photoplotter Setup
+------------------
+Format: X2, ASCII, 4.3, metric, absolute, eob=*, LZO
+Bounds: 5mm 1.33mm 53.6mm 40.405mm
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer, I=Index
+
+D10	CIRCLE  D=1.016mm                                                         DRAW  Conductor
+D11	CIRCLE  D=0.254mm                                                         DRAW  Conductor
+D12	DIL     W=2.032mm             H=2.54mm              C=0.305mm             FLASH ComponentPad
+D13	DIL     W=2.54mm              H=2.032mm             C=0.305mm             FLASH ComponentPad
+D14	CIRCLE  D=0.102mm                                                         DRAW  Profile
+D15	PPAD    W=2.286mm             H=2.794mm             I=0                   FLASH Material
+D16	PPAD    W=2.794mm             H=2.286mm             I=1                   FLASH Material
+D17	CIRCLE  D=0.102mm                                                         DRAW  Material
+D18	CIRCLE  D=1.016mm                                                         DRAW  Material
+D19	CIRCLE  D=0.163mm                                                         DRAW  Material
+D70	CIRCLE  D=0.231mm                                                         DRAW  Material
+D71	CIRCLE  D=0.05mm                                                          DRAW  Material
+D20	CIRCLE  D=0.837mm                                                         DRAW  Material
+D21	CIRCLE  D=1mm                                                             FLASH ComponentDrill
+
+Layer Stackup
+-------------
+Core                     : 1.6mm      FR4
+Bottom Copper            : 0.035mm    Copper
+Bottom Solder Resist     : 0.01mm     Resist
+
+
+[END OF FILE]
