@@ -1,0 +1,121 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net 5V 
+   (rule
+   )
+   (wire (path BOT 101600  315740 889160 762000 889160 762000 1598000
+     1841500 1598000)
+    (connect (terminal pin MQ1-0) (terminal wire))
+   )
+   (wire (path BOT 101600  5500000 1598000 5500000 1598001 5080000 1598001
+     5080000 1598000 1841500 1598000)
+    (connect (terminal pin I/O-3) (terminal wire))
+   )
+   (wire (path BOT 101600  1841500 1598000 1841500 2032000)
+    (connect (terminal wire) (terminal pin U1-9))
+   )
+   )
+   (Net AOS 
+   (rule
+   )
+   (wire (path BOT 101600  2349500 508000 2349500 840000 5500000 840000)
+    (connect (terminal pin U1-3) (terminal pin I/O-0))
+   )
+   )
+   (Net AOUT 
+   (rule
+   )
+   (wire (path BOT 101600  3873500 2032000 3873500 1778000 315740 1778000
+     315740 1651160)
+    (connect (terminal pin U1-6) (terminal pin MQ1-3))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 101600  5500000 1852000 5500000 2286000 1333500 2286000)
+    (connect (terminal pin I/O-4) (terminal wire))
+   )
+   (wire (path BOT 101600  315740 1143160 0 1143160 0 2286000
+     1333500 2286000)
+    (connect (terminal pin MQ1-1) (terminal wire))
+   )
+   (wire (path BOT 101600  1333500 2032000 1333500 2286000)
+    (connect (terminal pin U1-10) (terminal wire))
+   )
+   )
+   (Net RX 
+   (rule
+   )
+   (wire (path BOT 101600  5500000 1090000 1333500 1090000 1333500 508000)
+    (connect (terminal pin I/O-1) (terminal pin U1-1))
+   )
+   )
+   (Net TX 
+   (rule
+   )
+   (wire (path BOT 101600  5500000 1344000 1079500 1344000 1079500 508000)
+    (connect (terminal pin I/O-2) (terminal pin U1-0))
+   )
+   )
+  )
+ )
