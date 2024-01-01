@@ -1,0 +1,36 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'pcb.pdsprj'.
+CADCAM generated at 21:06:42 on 30 December 2023.
+
+File List
+---------
+Bottom Copper           : pcb - CADCAM Bottom Copper.GBR
+Slot                    : pcb - CADCAM Slot.GBR
+Drill, Plated, 1-16     : pcb - CADCAM Drill TOP-BOT Plated.GBR
+Netlist                 : pcb - CADCAM Netlist.IPC
+
+Photoplotter Setup
+------------------
+Format: X2, ASCII, 4.3, metric, absolute, eob=*, LZO
+Bounds: 0 0 59.69mm 100.33mm
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer, I=Index
+
+D10	CIRCLE  D=1.778mm                                                         DRAW  Conductor
+D11	CIRCLE  D=1.016mm                                                         DRAW  Conductor
+D12	CIRCLE  D=0.254mm                                                         DRAW  Conductor
+D13	DIL     W=2.032mm             H=2.54mm              C=0.305mm             FLASH ComponentPad
+D14	CIRCLE  D=0.102mm                                                         DRAW  Profile
+D15	CIRCLE  D=1mm                                                             FLASH ComponentDrill
+
+Layer Stackup
+-------------
+Core                     : 1.6mm      FR4
+Bottom Copper            : 0.036mm    Copper
+Bottom Solder Resist     : 0.01mm     Resist
+
+
+[END OF FILE]
